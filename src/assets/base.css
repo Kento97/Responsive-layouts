@@ -6,3 +6,10 @@
   position: relative;
   font-weight: normal;
 }
+html {
+  height: 100vh;
+}
+body,
+#app {
+  height: 100%;
+}
