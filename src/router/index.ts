@@ -8,17 +8,22 @@ const router = createRouter({
       path: "/",
       name: "layout",
       component: Layout,
-      redirect: "first",
+      redirect: "/1",
       children: [
         {
-          path: "first",
+          path: "1",
           name: "first",
           component: () => import("@/views/First.vue"),
         },
         {
-          path: "second",
+          path: "2",
           name: "second",
           component: () => import("@/views/Second.vue"),
+        },
+        {
+          path: "3",
+          name: "third",
+          component: () => import("@/views/Third.vue"),
         },
       ],
     },
