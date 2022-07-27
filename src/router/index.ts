@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import Layout from "@/layouts/index.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -24,6 +24,11 @@ const router = createRouter({
           path: "3",
           name: "third",
           component: () => import("@/views/Third.vue"),
+        },
+        {
+          path: "4",
+          name: "fourth",
+          component: () => import("@/views/Fourth.vue"),
         },
       ],
     },
