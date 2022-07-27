@@ -36,6 +36,10 @@ const pathList = computed(() => router.options.routes[0].children)
         height: 100%;
         width: 200px;
         border-right: 1px solid;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-y: auto;
 
         .logo {
             width: 100%;
@@ -66,6 +70,8 @@ const pathList = computed(() => router.options.routes[0].children)
     .content {
         width: 100%;
         padding: 10px;
+        margin-left: 200px;
+        overflow-y: auto;
     }
 }
 </style>
